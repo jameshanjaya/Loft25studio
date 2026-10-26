@@ -1,0 +1,27 @@
+# Salin jadi .dev.vars. File .dev.vars tidak ikut ke git.
+# `npm run dev` menyalin file ini kalau .dev.vars belum ada.
+# Ganti MASTER_PASSWORD sebelum orang lain bisa membuka komputer ini.
+
+ENVIRONMENT=development
+XAI_MOCK=1
+
+# Kosongkan selama uji. Jangan taruh kunci asli di file yang di-commit.
+XAI_API_KEY=
+
+MASTER_EMAIL=mandala@studio.local
+MASTER_PASSWORD=GantiPasswordIni
+
+# Lokal: lewati Turnstile. Production: hapus BYPASS, isi kedua kunci, ENVIRONMENT=production.
+TURNSTILE_BYPASS=1
+TURNSTILE_SITE_KEY=
+TURNSTILE_SECRET=
+
+# Pembayaran QRIS belum dinyalakan.
+MIDTRANS_ENABLED=0
+MIDTRANS_SERVER_KEY=
+MIDTRANS_CLIENT_KEY=
+
+# Notifikasi opsional. Kosong = cuma masuk log.
+TELEGRAM_BOT_TOKEN=
+TELEGRAM_CHAT_ID=
+ALERT_EMAIL=
